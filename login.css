@@ -1,0 +1,125 @@
+*{
+    transition:all 0.3s ease;
+}
+body {
+padding:0;margin:0 auto;
+    background:#f1f1f1;
+    background-size: cover;
+    height: 1000px;
+    position:relative;
+    top: -35px;
+    overflow-y: hidden;
+
+}
+#head{
+    display: block;
+    background: rgba(0,0,0,0.2);
+;
+    width: 100%;
+    height: 230px;
+    position:relative;
+    top:-37px;
+    z-index: 1;
+    display:none;
+}
+#logo{
+position: relative;
+    top:0px;
+}
+
+legend{
+    position:relative;
+    top:17px;
+    color:#fff;
+    font-size: 32px;
+    font-family:sans-serif;
+    
+}
+#box{
+    position:relative;
+    top:75px;
+	width:300px;
+	max-width:650px;
+	height:300px;	
+	background-color:rgba(255,255,255,1);
+	border-radius:0px;
+	padding:0 0 0 0;
+	margin:0px auto;
+    z-index: 2;
+    box-shadow: 0 2px 3px #888888;
+
+
+}
+#topbox
+{
+    background: #2196f3;
+    width: 100%;
+    height: 70px;
+    
+    
+}
+
+
+/**------------USER------------**/
+#user{
+border:0px #ccc solid;
+    border-bottom:1px #ccc solid; color:#222222;background:rgba(255,255,255,0.1);opacity: 1;
+height:40px;font-size:16px;
+display:block;width:230px;
+text-align:center;border-radius:0px;
+font-family:inherit;outline: none;
+    transition:all 0.3s ease;
+margin-top: 10px;
+}
+#user:focus{
+     border-bottom:1px #2196f3 solid;   
+}
+/**--------------------PASSWORD----------**/
+#pass{
+    border:0px #ccc solid;
+    border-bottom:1px #ccc solid;
+    color:#222222;background:rgba(255,255,255,0.1);opacity: 1;height:40px;font-size:16px;
+display:block;margin:5px;width:230px;text-align:center;border-radius:0px;font-family:inherit;outline: none;
+    transition:all 0.3s ease;
+}
+#pass:focus{
+     border-bottom:1px #2196f3 solid;   
+}
+/*---------------Boton---------*/
+#boton{
+	-webkit-appearance:none;color:#fff;
+	background:#2196f3; background-image:url(ic_arrow_forward_white_24dp_1x.png);
+	background-repeat: no-repeat; background-position:center; opacity: 1;
+    border:none;border-radius:21px;height:42px;width:234px;font-size:16px;font-weight:400;outline:0;text-transform:uppercase;
+    letter-spacing:1.5px;cursor:pointer;
+    margin-top: 10px;
+    }
+#boton:hover{
+	background-color:#64b5f6;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease
+	}
+    .vertical-form .footer{
+        position: relative;
+        top:80px;
+        text-align:center;
+        z-index: 3;
+color:#ccc;}
+.vertical-form .footer a{text-decoration:none;color:#f44336;}
+    @media (min-width:620px){
+        #box{
+            width: 600px;
+        }
+        #topbox{
+            height: 300px;
+            width:300px;
+            position: absolute;
+        }
+        #user,#pass,#boton,#error{
+            position: relative;
+            left:152px;
+            top:55px;
+        }
+        legend{
+            position: relative;
+            top:85px;
+        }
+       }
